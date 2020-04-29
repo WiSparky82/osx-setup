@@ -14,4 +14,4 @@ Because certain versions OS X may save your git password in a locally accessible
 * Attach the copy of your RSA key left on your clipboard to your Git repository host account.
 
 # Credits
-While not directly forked from it, this repo certainly owes a lot to https://github.com/danielsaidi/osx.
+While not directly forked from it, this repo certainly owes *a lot* to https://github.com/danielsaidi/osx.
