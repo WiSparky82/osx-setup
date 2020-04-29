@@ -6,13 +6,12 @@
 # EXECUTION
 
 read -rp "[SSH] Create new SSH key (y/n): " response
-if [[ $response = y* ]]
-then
-	echo ""
-	read -rp "Enter your e-mail: " ssh_email
-	echo ""
-    echo "[SSH] Creating ssh key"
-    ssh-keygen -t rsa -b 4096 -C "$ssh_email"
+if [[ $response == y* ]]; then
+  echo ""
+  read -rp "Enter your e-mail: " ssh_email
+  echo ""
+  echo "[SSH] Creating ssh key"
+  ssh-keygen -t rsa -b 4096 -C "$ssh_email"
 fi
 echo ""
 
@@ -22,7 +21,7 @@ ssh-add -K ~/.ssh/id_rsa
 echo ""
 
 echo "[SSH] Copying ssh key to pasteboard"
-pbcopy < ~/.ssh/id_rsa.pub
+pbcopy <~/.ssh/id_rsa.pub
 
 echo "[SSH] Done"
 echo ""
