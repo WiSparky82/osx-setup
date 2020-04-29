@@ -13,5 +13,19 @@ Because certain versions OS X may save your git password in a locally accessible
 * Execute `./ssh.sh`
 * Attach the copy of your RSA key left on your clipboard to your Git repository host account.
 
+## Setup Script
+`setup.sh` is the main entry point to the setup process. This will take you to the main menu and allow you to select from all the available options.
+
+### Pre-requisites
+Assuming you've setup an SSH key and attached it to your Git repository host
+* [Setup an SSH key](#ssh-key-setup)
+* Clone this repository using `git clone` to a location of your choice
+
+### Main Menu
+* Run `./setup.sh` to run setup in main menu mode
+
+### Specific Setup Option
+* Run `./setup.sh [OPTION]` to trigger a specific setup script
+
 # Credits
 While not directly forked from it, this repo certainly owes *a lot* to https://github.com/danielsaidi/osx.
