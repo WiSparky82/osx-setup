@@ -5,8 +5,9 @@
 
 # EXECUTION
 
-read -rp "[SSH] Create new SSH key (yes/no): " response
-if test "$response" = "yes"; then
+read -rp "[SSH] Create new SSH key (y/n): " response
+if [[ $response = y* ]]
+then
 	echo ""
 	read -rp "Enter your e-mail: " ssh_email
 	echo ""
