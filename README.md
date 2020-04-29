@@ -1,5 +1,5 @@
 # OS X Setup Script
-Automation for setting up an OS X machine
+This repository contains scripts which automate the setup of a new OS X machine. Through the application of system settings, personal configurations, and installation of several package management tools and applications, one can be up-and-running in a matter of minutes.
 
 # Author
 Chris Spoehr, chris.spoehr@gmail.com
