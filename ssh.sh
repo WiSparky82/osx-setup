@@ -11,7 +11,7 @@ if test "$response" = "yes"; then
 	read -rp "Enter your e-mail: " ssh_email
 	echo ""
     echo "[SSH] Creating ssh key"
-    ssh-keygen -t rsa -b 4096 -C $ssh_email
+    ssh-keygen -t rsa -b 4096 -C "$ssh_email"
 fi
 echo ""
 
