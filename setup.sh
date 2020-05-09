@@ -7,7 +7,11 @@
 # ./setup.sh [OPTION]
 
 run_ssh() {
-  source ssh.sh
+    source ssh.sh
+}
+
+run_system() {
+  source scripts/system.sh
 }
 
 # OPTIONS
@@ -15,12 +19,17 @@ run_ssh() {
 process_option() {
   case $1 in
   'all')
+    run_system
     run_ssh
     break
     ;;
   'ssh')
     run_ssh
     break
+    ;;
+  'system')
+    run_system
+    return
     ;;
 
   'q')
@@ -44,6 +53,7 @@ while true; do
     echo ""
     echo "      all:  Install everything"
     echo "      ssh:  Create & copy SSH key"
+    echo "   system:  Install system software"
     echo ""
     echo "        q:  Quit/Exit."
     echo ""
