@@ -7,7 +7,7 @@
 # ./setup.sh [OPTION]
 
 run_ssh() {
-    source ssh.sh
+  source ssh.sh
 }
 
 # OPTIONS
