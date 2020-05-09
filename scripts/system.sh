@@ -19,3 +19,7 @@ echo ""
 echo "[SYSTEM] Install Brew Bundle"
 brew tap Homebrew/bundle
 echo ""
+
+echo "[SYSTEM] Installing Git via Homebrew"
+brew install git
+echo ""
