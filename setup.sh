@@ -14,13 +14,22 @@ run_system() {
   source scripts/system.sh
 }
 
+run_dotfiles() {
+  source scripts/dotfiles.sh
+}
+
 # OPTIONS
 
 process_option() {
   case $1 in
   'all')
     run_system
+    run_dotfiles
     run_ssh
+    break
+    ;;
+  'dotfiles')
+    run_dotfiles
     break
     ;;
   'ssh')
@@ -52,6 +61,7 @@ while true; do
     echo "Available commands:"
     echo ""
     echo "      all:  Install everything"
+    echo " dotfiles:  Establish dotfiles via Homesick"
     echo "      ssh:  Create & copy SSH key"
     echo "   system:  Install system software"
     echo ""
