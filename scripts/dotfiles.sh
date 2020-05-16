@@ -16,6 +16,9 @@ do
   repo="$p2"
 done < "$file"
 
+echo "[DOTFILES] Removing any existing castles"
+rm -rf ~/.homesick
+
 echo "[DOTFILES] Cloning castle '$castle' from '$repo'"
 homeshick clone "$repo"
 homeshick link "$castle"
