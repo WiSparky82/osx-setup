@@ -19,7 +19,9 @@ run_dotfiles() {
 }
 
 run_apps() {
+  echo "[APPS] Installing Apps via Homebrew bundle"
   brew bundle
+  echo ""
 }
 
 # OPTIONS
