@@ -7,7 +7,6 @@ cask "intellij-idea"
 # Collab
 cask "slack"
 cask "sococo"
-cask "trello"
 
 # Browsers
 cask "google-chrome"
