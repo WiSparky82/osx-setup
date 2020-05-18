@@ -3,6 +3,7 @@ cask_args appdir: "/Applications"
 # IDEs
 cask "visual-studio-code"
 cask "intellij-idea"
+cask "rider"
 
 # Collab
 cask "slack"
