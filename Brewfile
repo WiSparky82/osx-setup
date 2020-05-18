@@ -14,7 +14,7 @@ cask "onedrive"
 cask "google-chrome"
 cask "firefox"
 
-# Cask REST Clients
+# General development
 cask "sourcetree"
 cask "postman"
 cask "insomnia"
