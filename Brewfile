@@ -19,5 +19,8 @@ cask "sourcetree"
 cask "postman"
 cask "insomnia"
 
+# Database Clients
+cask "datagrip"
+
 # Potpourri
 cask "1password"
