@@ -18,14 +18,23 @@ run_dotfiles() {
   source scripts/dotfiles.sh
 }
 
+run_apps() {
+  brew bundle
+}
+
 # OPTIONS
 
 process_option() {
   case $1 in
   'all')
     run_system
+    run_apps
     run_dotfiles
     run_ssh
+    break
+    ;;
+  'apps')
+    run_apps
     break
     ;;
   'dotfiles')
@@ -61,6 +70,7 @@ while true; do
     echo "Available commands:"
     echo ""
     echo "      all:  Install everything"
+    echo "     apps:  Install apps via Homebrew bundle"
     echo " dotfiles:  Establish dotfiles via Homesick"
     echo "      ssh:  Create & copy SSH key"
     echo "   system:  Install system software"
