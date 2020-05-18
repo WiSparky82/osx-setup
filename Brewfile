@@ -8,6 +8,7 @@ cask "rider"
 # Collab
 cask "slack"
 cask "sococo"
+cask "onedrive"
 
 # Browsers
 cask "google-chrome"
