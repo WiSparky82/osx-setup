@@ -18,6 +18,10 @@ run_dotfiles() {
   source scripts/dotfiles.sh
 }
 
+run_dotnet() {
+  source scripts/dotnet.sh
+}
+
 run_apps() {
   echo "[APPS] Installing Apps via Homebrew bundle"
   brew bundle
@@ -31,12 +35,17 @@ process_option() {
   'all')
     run_system
     run_apps
+    run_dotnet
     run_dotfiles
     run_ssh
     break
     ;;
   'apps')
     run_apps
+    break
+    ;;
+  'dotnet')
+    run_dotnet
     break
     ;;
   'dotfiles')
@@ -73,6 +82,7 @@ while true; do
     echo ""
     echo "      all:  Install everything"
     echo "     apps:  Install apps via Homebrew bundle"
+    echo "   dotnet:  Setup .Net Core"
     echo " dotfiles:  Establish dotfiles via Homesick"
     echo "      ssh:  Create & copy SSH key"
     echo "   system:  Install system software"
