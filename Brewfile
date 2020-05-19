@@ -4,6 +4,7 @@ cask_args appdir: "/Applications"
 cask "visual-studio-code"
 cask "intellij-idea"
 cask "rider"
+cask "atom"
 
 # Collab
 cask "slack"
@@ -23,6 +24,7 @@ cask "insomnia"
 cask "datagrip"
 cask "azure-data-studio"
 cask "dbeaver-community"
+cask "postbird"
 
 # Potpourri
 cask "1password"
