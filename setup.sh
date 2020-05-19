@@ -14,6 +14,10 @@ run_system() {
   source scripts/system.sh
 }
 
+run_config() {
+  source scripts/config.sh
+}
+
 run_dotfiles() {
   source scripts/dotfiles.sh
 }
@@ -34,6 +38,7 @@ process_option() {
   case $1 in
   'all')
     run_system
+    run_config
     run_apps
     run_dotnet
     run_dotfiles
@@ -42,6 +47,10 @@ process_option() {
     ;;
   'apps')
     run_apps
+    break
+    ;;
+  'config')
+    run_config
     break
     ;;
   'dotnet')
@@ -81,6 +90,7 @@ while true; do
     echo "Available commands:"
     echo ""
     echo "      all:  Install everything"
+    echo "   config:  Configure macOS"
     echo "     apps:  Install apps via Homebrew bundle"
     echo "   dotnet:  Setup .Net Core"
     echo " dotfiles:  Establish dotfiles via Homesick"
