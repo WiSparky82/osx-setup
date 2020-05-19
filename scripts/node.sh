@@ -16,3 +16,6 @@ echo "[NODE] Install latest stable node"
 nvm install node
 nvm use node
 echo ""
+
+echo "[NODE] Install yarn"
+brew install yarn
