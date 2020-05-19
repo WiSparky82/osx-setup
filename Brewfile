@@ -28,3 +28,5 @@ cask "postbird"
 
 # Potpourri
 cask "1password"
+cask "forklift"
+
