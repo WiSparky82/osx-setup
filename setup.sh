@@ -49,7 +49,7 @@ process_option() {
     ;;
   'system')
     run_system
-    return
+    break
     ;;
 
   'q')
