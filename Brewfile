@@ -22,6 +22,7 @@ cask "insomnia"
 # Database Clients
 cask "datagrip"
 cask "azure-data-studio"
+cask "dbeaver-community"
 
 # Potpourri
 cask "1password"
