@@ -36,3 +36,7 @@ echo ""
 echo "[SYSTEM] Installing Git via Homebrew"
 brew install git
 echo ""
+
+echo "[SYSTEM] Installing Docker via Homebrew"
+brew cask install docker
+echo ""
