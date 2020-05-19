@@ -26,6 +26,10 @@ run_dotnet() {
   source scripts/dotnet.sh
 }
 
+run_node() {
+  source scripts/node.sh
+}
+
 run_apps() {
   echo "[APPS] Installing Apps via Homebrew bundle"
   brew bundle
@@ -41,6 +45,7 @@ process_option() {
     run_config
     run_apps
     run_dotnet
+    run_node
     run_dotfiles
     run_ssh
     break
@@ -55,6 +60,10 @@ process_option() {
     ;;
   'dotnet')
     run_dotnet
+    break
+    ;;
+  'node')
+    run_node
     break
     ;;
   'dotfiles')
@@ -93,6 +102,7 @@ while true; do
     echo "   config:  Configure macOS"
     echo "     apps:  Install apps via Homebrew bundle"
     echo "   dotnet:  Setup .Net Core"
+    echo "     node:  Setup Node"
     echo " dotfiles:  Establish dotfiles via Homesick"
     echo "      ssh:  Create & copy SSH key"
     echo "   system:  Install system software"
