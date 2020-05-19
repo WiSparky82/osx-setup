@@ -30,3 +30,8 @@ cask "postbird"
 cask "1password"
 cask "forklift"
 cask "iterm2"
+
+# Mac App Store
+brew "mas"
+
+mas "Trello", id: 1278508951
